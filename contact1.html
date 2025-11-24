@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    .ctotal{
+        font-family: Arial, sans-serif;
+        background: #e6f3ff;
+        margin: 0;
+        padding: 6%;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-container{
+        display: flex;
+        max-width: 850px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .left-box{
+        width: 300px;
+        color: white;
+        padding: 25px;
+     margin:30 0px;
+        
+    }
+    .left-box h2{
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .left-box p{
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .right-box{
+        flex: 1;
+        padding: 50px;
+    }
+
+    .right-box h2{
+        margin-top: 0;
+        font-size: 28px;
+        color: #2b6777;
+    }
+
+    .right-box p{
+        font-size: 14px;
+        color: #666;
+    }
+
+    .input-box{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .send-btn{
+        background: rgb(43, 103, 119);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 8px;
+        margin-left: 40%;
+        
+    }
+
+    .input-box.textarea {
+    height: 30px;
+    border: none;
+    border-bottom: solid 2px #ccc;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.input-box.textarea:focus {
+    border-color: #4aa9ff;
+    outline: none;
+    background: white;
+}
+  .footer {
+    background:rgb(43, 103, 119);
+    color: #efe6dd;                
+    padding: 36px 6%;
+    font-family: Arial, sans-serif;
+  }
+  .footer-inner {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative; /* above ::before */
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+  .footer-col { min-width: 180px; max-width: 320px; }
+  .footer h4 {
+    margin: 0 0 10px 0;
+    color: #fff3ea;
+    font-size: 16px;
+  }
+
+  .footer p, .footer a, .footer .contact {
+    margin: 6px 0;
+    color: #e8ddd2;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+
+  .footer a:hover { color: #ffffff; text-decoration: underline; }
+
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    padding-top: 14px;
+    text-align: center;
+    color: #d9cfc6;
+    font-size: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+    @media(max-width: 700px){
+        .contact-container{
+            flex-direction: column;
+        }
+        .left-box{
+            width: 100%;
+        }
+        iframe {
+            width: 85%;
+            height: 290px;
+        }
+        .send-btn{
+            margin-left: 30%;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="ctotal">
+<div class="contact-container">
+    <div class="left-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.634622632659!2d83.3035963748972!3d18.412634987418736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394f5e6f5b8d7d%3A0x7c3c8a5e4e4e4e4e!2sAditya%20Institute%20of%20Technology%20and%20Management%2C%20Tekkali!5e0!3m2!1sen!2sin!4v1700805726786!5m2!1sen!2sin" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="right-box">
+        <h2>Get in Touch</h2>
+        <p>Feel free to drop us a line below!</p>
+
+        <input type="text" class="input-box textarea" placeholder="Your name">
+        <input type="email" class="input-box textarea" placeholder="Your email">
+        <textarea class="input-box textarea" placeholder="Your message" style="height:30px"></textarea>
+        <button class="send-btn">SEND</button>
+    </div>
+
+</div>
+</div>
+<footer class="footer" role="contentinfo" aria-label="Footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>CIGAI</h4>
+      <p>The CIGAI Conference unites researchers and experts to explore how mathematical modeling, computational intelligence, and generative AI come together.</p>
+    </div>
+    <div class="footer-col" aria-label="Quick links">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a><br>
+      <a href="#">About</a><br>
+      <a href="#">Timeline</a><br>
+      <a href="#">Contact</a>
+    </div>
+  
+    <div class="footer-col" aria-label="Contact information">
+      <h4>Contact</h4>
+      <div class="contact">NH-16, Tekkali, Srikakulam - 532201, Andhra Pradesh, India.</div>
+      <div class="contact">Phone: 987654321</div>
+      <div class="contact">Email: aitam@gmail.com</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 SSC. All Rights Reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
